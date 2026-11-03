@@ -288,9 +288,98 @@ footer {
     .steps {
         flex-direction: column;
     }
-
+    
     footer {
         flex-direction: column;
         gap: 5px;
+    }
+    
+}
+
+
+.page-intro {
+    padding: 55px 0 35px;
+    border-bottom: 1px solid #cbdceb;
+    max-width: 850px;
+}
+
+.page-intro h1 {
+    color: #1557a6;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.page-intro p {
+    color: #285b88;
+    font-size: 16px;
+}
+
+.techniques {
+    padding: 40px 0 65px;
+}
+
+.techniques h2 {
+    color: #1557a6;
+    font-family: 'Arvo', serif;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.technique-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.technique-card {
+    border: 1px solid #bfd3e5;
+    background-color: #f8fbfe;
+    padding: 20px;
+}
+
+.technique-card h3 {
+    color: #1557a6;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.technique-card p {
+    color: #285b88;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.video-placeholder {
+    background-color: #e9f0f7;
+    border: 1px dashed #8baac8;
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #52799f;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.technique-card .video-options {
+    font-size: 13px;
+    color: #52799f;
+    margin-bottom: 0;
+}
+
+@media (max-width: 750px) {
+    .technique-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-intro {
+        padding-top: 40px;
+    }
+
+    .page-intro h1 {
+        font-size: 32px;
     }
 }
